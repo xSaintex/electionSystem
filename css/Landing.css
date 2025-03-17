@@ -23,14 +23,6 @@
     object-fit: cover;
 }
 
-.second_bg {
-    height: 729px;
-    opacity: 0.5;
-    flex: 1;
-    width: 100%;
-    object-fit: cover;
-}
-
 .row_one {
     height: 729px;
     background-image: url("C:/xampp/htdocs/electionSystem/csglogo_nobg.png");
