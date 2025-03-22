@@ -40,28 +40,28 @@
                 <form class="form-container">
                     <div class="form-row">
                         <div class="form-group">
-                            <input type="text" placeholder="First name" class="form-input" aria-label="First name" />
+                            <input type="text" placeholder="First name" class="form-input" aria-label="First name" readonly/>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Email" class="form-input" aria-label="Email" />
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="text" placeholder="Middle Initial" class="form-input" aria-label="Middle Initial" />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Program" class="form-input" aria-label="Program" />
+                            <input type="email" placeholder="Email" class="form-input" aria-label="Email" readonly/>
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group">
-                            <input type="text" placeholder="Last Name" class="form-input" aria-label="Last Name" />
+                            <input type="text" placeholder="Middle Initial" class="form-input" aria-label="Middle Initial" readonly/>
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Student Number" class="form-input" aria-label="Student Number" />
+                            <input type="text" placeholder="Program" class="form-input" aria-label="Program" readonly/>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="Last Name" class="form-input" aria-label="Last Name" readonly/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Student Number" class="form-input" aria-label="Student Number" readonly/>
                         </div>
                     </div>
 
