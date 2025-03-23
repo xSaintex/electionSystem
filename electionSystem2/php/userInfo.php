@@ -36,32 +36,32 @@
             <section class="profile-wrapper">
                 <img src="pfp.png" alt="Profile" class="profile-image" />
                 
-                <!-- User Information Form -->
+                <!-- User Information Form --> <!-- nag add lang kog readonly sa uneditable na field inputs -->
                 <form class="form-container">
                     <div class="form-row">
                         <div class="form-group">
-                            <input type="text" placeholder="First name" class="form-input" aria-label="First name" readonly/>
+                            <input type="text" placeholder="First name" class="form-input" aria-label="First name" readonly/> <!-- ing ani lang -->
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Email" class="form-input" aria-label="Email" readonly/>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="text" placeholder="Middle Initial" class="form-input" aria-label="Middle Initial" readonly/>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Program" class="form-input" aria-label="Program" readonly/>
+                            <input type="email" placeholder="Email" class="form-input" aria-label="Email" readonly/> <!-- dhasjdk -->
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group">
-                            <input type="text" placeholder="Last Name" class="form-input" aria-label="Last Name" readonly/>
+                            <input type="text" placeholder="Middle Initial" class="form-input" aria-label="Middle Initial" readonly/> <!-- hasdkjhas -->
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Student Number" class="form-input" aria-label="Student Number" readonly/>
+                            <input type="text" placeholder="Program" class="form-input" aria-label="Program" readonly/> <!-- ahskdjhasd -->
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="Last Name" class="form-input" aria-label="Last Name" readonly/> <!-- asjhdkjas -->
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Student Number" class="form-input" aria-label="Student Number" readonly/> <!-- sajdkha -->
                         </div>
                     </div>
 
