@@ -171,8 +171,8 @@ body {
 
 .dropdown-menu {
     position: absolute;
-    top: -65px; /* Adjusted to be just below the 24px chevron + a small gap */
-    left: calc(12px - 5px); /* Aligns with the left edge of .action-button, where chevron starts */
+    top: -65px; 
+    left: calc(12px - 5px); 
     background: white;
     border: 1px solid #ccc;
     border-radius: 5px;
