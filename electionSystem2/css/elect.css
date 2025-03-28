@@ -289,6 +289,7 @@ body {
 
 /* Submit Vote Button */
 .submit-voteButton {
+    position: fixed;
     width: 130px;
     height: 35px;
     padding: 12px;
@@ -302,7 +303,7 @@ body {
     background-color: #007aff;
     border: none;
     text-align: center;
-    margin-top: 230px;
+    margin-top: 610px;
     margin-left: 1200px;
     transition: background-color 0.3s ease-in-out; 
 }
