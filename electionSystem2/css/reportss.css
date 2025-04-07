@@ -1,0 +1,475 @@
+/* Page container */
+.page-container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative; /* do this */
+    align-items: center;
+    background-color: #f7bd03;
+    top: 0;
+    left: 0;
+    z-index: 0; /* turn to zero para dili niya ma cover ang function sa buttons */
+  }
+  
+  .content-wrapper {
+    display: flex; /*do this*/
+    flex-direction: column;
+    position: relative;
+    min-height: 2300px; /* adjust lang ni depende unsa kataas ang needed sa page, so far mao ni sa admin */
+    width: 100%;
+    padding: 56px 80px;
+    align-items: flex-start;
+    z-index: 1; /* add ni para ma apply gihapon siya tas above siya sa background nato */
+  }
+
+  @media (max-width: 991px) {
+    .content-wrapper {
+      max-width: 100%;
+      padding: 56px 20px;
+    }
+  }
+
+  /* Background logo */
+  .background-logo {
+    position: fixed; /* do this */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    mix-blend-mode: luminosity;
+  }
+
+/* Header Title and Divider */
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.reports-container {
+    width: 1400px;
+    position: relative;
+    padding-top: 76px;
+    padding-left: 150px;
+}
+
+.reports-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+.reports-title {
+    color: #000;
+    text-align: left;
+    text-shadow: 0px 8px 12px rgba(0, 0, 0, 0.5), 0px 4px 4px rgba(0, 0, 0, 0.3);
+    font-family: "Inter", sans-serif;
+    font-size: 34px;
+    font-weight: 900;
+    margin-top: -160px;
+    margin-left: -80px;
+    white-space: nowrap;
+}
+
+.school-year-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: #000;
+    font-weight: 700;
+    margin-left: auto;
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: inherit;
+    margin-top: -90px;
+    margin-right: 80px;
+}
+
+.button-text {
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.chevron-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.action-button:hover .chevron-icon path {
+    stroke: #4B2E2E !important;
+}
+
+.action-button:hover .button-text {
+    color: #4B2E2E !important;
+}
+
+.school-year-text {
+    width: 130px;
+    object-fit: contain;
+}
+
+.reports-divider {
+    width: 103.4%;
+    height: 2px;
+    background-color: #000;
+    border: none;
+    margin: 0;
+    opacity: 1;
+    margin-top: -50px;
+    margin-bottom: 25px;
+    margin-left: -80px;
+}
+
+.reports-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+@media (max-width: 991px) {
+    .reports-container {
+        width: 90%;
+        padding-top: 40px;
+    }
+    .reports-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 640px) {
+    .reports-container {
+        width: 95%;
+        padding-top: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .reports-title {
+        font-size: 28px;
+    }
+    .school-year-wrapper {
+        margin-top: 8px;
+    }
+}
+
+/*School Year Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: -65px; 
+    left: calc(12px - 5px); 
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    list-style: none;
+    padding: 0;
+    width: 150px;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+}
+
+.dropdown-menu li:hover {
+    background: #f0f0f0;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+/* List of Candidates */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .candidate-comparison {
+    display: flex;
+    max-width: 388px;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family:
+      Inter,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 11px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .position-title {
+    color: #000;
+    text-shadow:
+    0px 8px 12px rgba(0, 0, 0, 0.15),
+    0px 4px 4px rgba(0, 0, 0, 0.3);
+    font-size: 25px;
+    font-weight: 900;
+    margin: 0;
+  }
+
+  .first-candidate-container {
+    align-self: stretch;
+    display: flex;
+    margin-top: 36px;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .candidate-info-wrapper {
+    display: flex;
+    align-items: stretch;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    margin-left: 50px;
+  }
+
+  .candidate-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .candidate-image {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 66px;
+    margin-left: -105px;
+  }
+
+  .candidate-name {
+    align-self: flex-start;
+    margin-top: 5px;
+    width: 176px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: -100px;
+  }
+
+  .vote-bar {
+    aspect-ratio: 8.62;
+    object-fit: contain;
+    object-position: center;
+    width: fit-content;
+    align-self: flex-start;
+    margin-top: 18px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    margin-left: -50px;
+    height: 30px;
+  }
+
+  .vote-count {
+    align-self: flex-start;
+    margin-top: 18px;
+  }
+
+  .second-candidate-container {
+    display: flex;
+    margin-top: 36px;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    margin-left: 90px;
+  }
+
+  .second-candidate-image {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 66px;
+    align-self: stretch;
+    flex-shrink: 0;
+    margin-left: -105px;
+  }
+
+  .second-vote-bar {
+    aspect-ratio: 3.28;
+    object-fit: contain;
+    object-position: center;
+    width: 95px;
+    align-self: stretch;
+    margin-top: 18px;
+    margin-bottom: auto;
+    flex-shrink: 0;
+    margin-left: -20px;
+    height: 30px;
+  }
+
+  .vote-percentage {
+    align-self: stretch;
+    margin-top: 24px;
+    margin-bottom: auto;
+  }
+
+  .second-candidate-name {
+    margin-top: 5px;
+    width: 176px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: -48px;
+  }
+
+/* Demographics */
+.dark-background-container {
+    position: relative;
+    width: 1157px;
+    height: 436px;
+    margin-top: 0; 
+    z-index: 0; 
+  }
+  
+  .background-transparentWrapper {
+    width: 100%;
+    height: 100%;
+    margin-top: -40px;
+  }
+  
+  .background-svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media (max-width: 991px) {
+    .dark-background-container {
+      width: 100%;
+      height: auto;
+      min-height: 436px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .dark-background-container {
+      min-height: 300px;
+    }
+  }
+
+  /* Dropdown */
+  .custom-drop-container {
+    display: flex;
+    gap: 30px;
+    font-family: Inter, sans-serif;
+    position: relative;
+    z-index: 10;
+    margin-left: 40px;
+    margin-top: 50px;
+  }
+
+  .custom-dropdown-wrapper {
+    position: relative;
+  }
+
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+
+  .dropdown-labelDemo {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+
+  .drop-icon {
+    width: 30px;
+    height: 21px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, stroke 0.3s ease;
+  }
+
+  .dropdown-labelPosi {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+
+  .down-icon {
+    width: 30px;
+    height: 21px;
+    margin-left: 50px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, stroke 0.3s ease;
+  }
+
+.dropdown-item:hover .dropdown-labelDemo,
+.dropdown-item:hover .dropdown-labelPosi {
+  color: #000000; 
+}
+
+.dropdown-item:hover .drop-icon path,
+.dropdown-item:hover .down-icon path {
+  stroke: #000000; 
+}
+
+  /* Dropdown menu */
+.custom-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px; 
+    left: 30%; 
+    transform: translateX(-50%); 
+    background-color: #ffffff;
+    border: 1px solid #d2ccccd2;
+    border-radius: 6px;
+    padding: 10px 0;
+    min-width: 180px;
+    z-index: 20;
+}
+
+.custom-dropdown-menu li {
+    padding: 10px 20px;
+    color: #000000;
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.custom-dropdown-menu li:hover {
+  background-color: #d2ccccd2;
+}
+
+.custom-dropdown-menu.active {
+  display: block;
+}
+
